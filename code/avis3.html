@@ -1,0 +1,107 @@
+<!--commentaires
+- html5, css, javascript
+- sujet du site libre 
+- sources concernant la redaction, les images et la concept : cité
+- formulaire obligatoire
+- cv sous format html (coder le cv), obligatoire
+- fichiers utilisés obligé d'être dans des fichiers diff
+- commenter le code
+- RESPONSIVE
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Projet de programmation web</title>
+        <link rel="stylesheet" href="avis3.css">
+        
+    </head>
+
+
+    <body>
+        <header>
+            <div class="nav-header"></div> <!-- afin de mettre en surbrillance la barre de navigation-->
+           <img class="drapeau" src="../photos/drapeau.png" alt="dreapeau de l'ile de la reunion"/>
+           <h1 class="titre"><a href="main.html">Ile de la Reunion</a></h1> 
+                <nav>
+                    <ul class="navigateur">
+                        <div class="dropdown">
+                            <li class="li-nav-avis"><a href="avis.html">Avis</a></li>
+                            <div class="dropdown-contenu">
+                                <p><a href="avis.html#avis">Avis 1</a></p>
+                                <p><a href="avis2.html#avis">Avis 2</a></p>
+                                <p><a href="avis3.html#avis">Avis 3</a></p>
+                            </div>
+                        </div>
+                            
+                        <div class="dropdown">
+                            <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a></li>
+                            <div class="dropdown-contenu">
+                                <p><a href="tourisme.html#titre-section">Le volcan</a></p>
+                                <p><a href="tourisme.html#titre-section2">Les plages</a></p>
+                                <p><a href="tourisme.html#titre-section3">Les forets</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <li class="li-nav-resto"><a href="restaurants.html">Restaurants</a></li>
+                            <div class="dropdown-contenu">
+                                <p>1</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                            
+                            <li class="li-nav-quizz"><a href="quizz.html">Quizz</a></li>
+                            <li class="li-nav-photos"><a href="photos.html">Photos</a></li>
+                    </ul>
+                </nav>
+            <img class="header" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+            <h1 class="titre-photo">ILE DE LA REUNION</h1>
+        </header>
+
+        <div id="avis">
+            <div class="flex-end">
+                <a href="avis.html#avis" class="button-avis1">Avis 1</a>
+                <a href="avis2.html#avis" class="button-avis2">Avis 2</a>
+                <a href="avis3.html#avis" class="button-avis3">Avis 3</a>
+            </div>
+        </div>
+
+            <div id="avis-2">
+                <img class="photo-personne" /> <!-- mettre une photo d'une personne shutterstock-->
+                <p class="avis-personne">
+                    "Je recommande vivement cette destination à tous les voyageurs en quête de découvertes et d'aventures. <br>
+            Les paysages de l'Île de la Reunion sont tout simplement époustouflants ! <br>
+            j'ai eu la chance de partager ce séjour avec une super compagnie. <br>
+            Merci beaucoup pour cette belle opportunité."
+                </p>
+                <p class="nom-personne">
+                        - Simon
+                </p>    
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="titrephoto">
+                <h1>Les photos</h1>
+            </div>
+            <div class="photo1">
+                <img id="myImg" src="../photos/photo-avis-1.jpg" alt="photo de vacances" style="width:100%;max-width:300px"/>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="nous">Site fait par <a href="CV_marine.html">B.Marine</a>
+            et <a href="CV_Johanna.html">S.Johanna</a></p>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

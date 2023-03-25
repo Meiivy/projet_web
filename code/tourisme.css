@@ -1,0 +1,238 @@
+header{ 
+    background-size: cover;
+    width: 98.5%;
+    height: 400px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.drapeau{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 68px;
+    top: 15px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+}
+
+.titre{
+    position: absolute;
+    text-decoration-line: underline;
+    width: 320px;
+    height: 58px;
+    left: 100px;
+    top: 20px;
+    font-size: 18px;
+}
+
+
+.navigateur {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+    width: 36%;
+    height: 50px;
+    vertical-align: middle;
+    left: 60%;
+}
+
+.li-nav-avis {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-avis.png");
+    color: red;
+}
+
+.li-nav-tourisme {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-tourisme.png");
+}
+
+.li-nav-resto {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-resto.png");
+}
+
+.li-nav-quizz {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-quizz.png");
+}
+
+.li-nav-photos {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-photos.png");
+}
+a{
+    color: red;
+}
+
+.page-atm{
+    color: #3366FF;
+}
+
+a:hover{
+    color: rgb(249, 253, 1);
+}
+
+.nav-header{
+    position: absolute;
+    width: 97.5%;
+    height: 80px;
+    left: 8px;
+    top: 8px;
+
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+}
+
+.titre-photo {
+    position: absolute;
+    height: 154px;
+    left: 150px;
+    top: 252px;
+
+    font-style: italic;
+    color: white;
+    font-size: 90px;
+}
+
+
+.main-piton{
+    position: absolute;
+    width: 90%;
+    left: 113px;
+}
+
+
+#titre-section{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+
+}
+
+.texte{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.photo-plage{
+    position: absolute;
+    width: 97.48%;
+    height: 400px;
+    left: 10px;
+    top: 750px;
+}
+
+#titre-section2{
+    position: absolute;
+    height: 154px;
+    left: 65%;
+    top: 1055px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    font-size: 90px;
+}
+
+.texte-section2{
+    position: absolute;
+    width: 90%;
+    height: 221px;
+    left: 100px;
+    top: 1200px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.photo-foret{
+    position: absolute;
+    width: 97.48%;
+    height: 400px;
+    left: 10px;
+    top: 1400px;
+}
+
+#titre-section3{
+    position: absolute;
+    width: 720px;
+    height: 154px;
+    left: 10%;
+    top: 1705px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    font-size: 90px;
+}
+
+.texte-section3{
+    position: absolute;
+    width: 90%;
+    height: 221px;
+    left: 100px;
+    top: 1850px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.footer{
+    position: absolute;
+    width: 97.45%;
+    height: 50px;
+    top: 2000px;
+
+    background-color: #3366FF;
+}
+
+.nous{
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.dropdown-contenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff91;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-contenu {
+    display: block;
+  }

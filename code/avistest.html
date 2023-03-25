@@ -1,0 +1,210 @@
+<!--commentaires
+    - html5, css, javascript
+    - sujet du site libre 
+    - sources concernant la redaction, les images et la concept : cité
+    - formulaire obligatoire
+    - cv sous format html (coder le cv), obligatoire
+    - fichiers utilisés obligé d'être dans des fichiers diff
+    - commenter le code
+    - RESPONSIVE
+    -->
+    
+    
+    <!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+            <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+            #myImg {
+              border-radius: 5px;
+              cursor: pointer;
+              transition: 0.3s;
+            }
+            
+            #myImg:hover {opacity: 0.7;}
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            }
+            
+            /* Modal Content (image) */
+            .modal-content {
+              margin: auto;
+              display: block;
+              width: 80%;
+              max-width: 700px;
+            }
+            
+            /* Caption of Modal Image */
+            #caption {
+              margin: auto;
+              display: block;
+              width: 80%;
+              max-width: 700px;
+              text-align: center;
+              color: #ccc;
+              padding: 10px 0;
+              height: 150px;
+            }
+            
+            /* Add Animation */
+            .modal-content, #caption {  
+              -webkit-animation-name: zoom;
+              -webkit-animation-duration: 0.6s;
+              animation-name: zoom;
+              animation-duration: 0.6s;
+            }
+            
+            @-webkit-keyframes zoom {
+              from {-webkit-transform:scale(0)} 
+              to {-webkit-transform:scale(1)}
+            }
+            
+            @keyframes zoom {
+              from {transform:scale(0)} 
+              to {transform:scale(1)}
+            }
+            
+            /* The Close Button */
+            .close {
+              position: absolute;
+              top: 15px;
+              right: 35px;
+              color: #f1f1f1;
+              font-size: 40px;
+              font-weight: bold;
+              transition: 0.3s;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #bbb;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px){
+              .modal-content {
+                width: 100%;
+              }
+            }
+            </style>
+        </head>
+    
+    
+        <body>
+            <header>
+                <div class="nav-header"></div> <!-- afin de mettre en surbrillance la barre de navigation-->
+               <img class="drapeau" src="../photos/drapeau.png" alt="dreapeau de l'ile de la reunion"/>
+               <h1 class="titre"><a href="main.html">Ile de la Reunion</a></h1> 
+                    <nav>
+                        <ul class="navigateur">
+                            <div class="dropdown">
+                                <li class="li-nav-avis"><a href="avis.html">Avis</a></li>
+                                <div class="dropdown-contenu">
+                                    <p><a href="avis.html#avis">Avis 1</a></p>
+                                    <p><a href="avis2.html#avis">Avis 2</a></p>
+                                    <p><a href="avis3.html#avis">Avis 3</a></p>
+                                </div>
+                            </div>
+                                
+                            <div class="dropdown">
+                                <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a></li>
+                                <div class="dropdown-contenu">
+                                    <p><a href="tourisme.html#titre-section">Le volcan</a></p>
+                                    <p><a href="tourisme.html#titre-section2">Les plages</a></p>
+                                    <p><a href="tourisme.html#titre-section3">Les forets</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <li class="li-nav-resto"><a href="restaurants.html">Restaurants</a></li>
+                                <div class="dropdown-contenu">
+                                    <p>1</p>
+                                    <p>2</p>
+                                </div>
+                            </div>
+                                
+                                <li class="li-nav-quizz"><a href="quizz.html">Quizz</a></li>
+                                <li class="li-nav-photos"><a href="photos.html">Photos</a></li>
+                        </ul>
+                    </nav>
+                <img class="header" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+                <h1 class="titre-photo">LES AVIS</h1>
+            </header>
+    
+            <div id="avis">
+                <div class="flex-end">
+                    <a href="avis.html#avis" class="button-avis1">Avis 1</a>
+                    <a href="avis2.html#avis" class="button-avis2">Avis 2</a>
+                    <a href="avis3.html#avis" class="button-avis3">Avis 3</a>
+                </div>
+    
+                <div id="avis-1">
+                    <img class="photo-personne" /> <!-- mettre une photo d'une personne shutterstock-->
+                    <p class="avis-personne">
+                            "Magnifiques paysages, temps superbe ! <br>
+                            Nous avons passés du bon temps sur <br>
+                            l’Île de la Reunion."
+                    </p>
+                    <p class="nom-personne">
+                            - P.Tracy
+                    </p>    
+                </div>
+            </div>
+                
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="../photos/photo-avis-1.jpg" alt="photo de vacances" style="width:100%;max-width:300px">
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    console.log(img)
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                </script>
+                    
+    
+            <div class="footer">
+                <p class="nous">Site fait par <a href="CV_marine.html">B.Marine</a>
+                et <a href="CV_Johanna.html">S.Johanna</a></p>
+            </div>
+        </body>
+    </html>
+    
