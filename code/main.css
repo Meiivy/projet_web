@@ -49,7 +49,7 @@ h1{
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-avis.png");
+    list-style-image: url("../photos/icon-avis.png");
     color: red;
 }
 
@@ -57,28 +57,28 @@ h1{
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-tourisme.png");
+    list-style-image: url("../photos/icon-tourisme.png");
 }
 
 .li-nav-resto {
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-resto.png");
+    list-style-image: url("../photos/icon-resto.png");
 }
 
 .li-nav-quizz {
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-quizz.png");
+    list-style-image: url("../photos/icon-quizz.png");
 }
 
 .li-nav-photos {
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-photos.png");
+    list-style-image: url("../photos/icon-photos.png");
 }
 
 a{
@@ -139,13 +139,13 @@ a:hover{
     position: absolute;
     color: #3366FF;
     left: 10%;
-    top: 50%;
+    top: 60%;
 
     text-decoration: underline;
 }
 
 .hymne-video{
-    top: 60%
+    top: 75%
 }
 
 .carte{

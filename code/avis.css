@@ -49,7 +49,7 @@ h1{
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-avis.png");
+    list-style-image: url("../photos/icon-avis.png");
     color: red;
 }
 
@@ -57,28 +57,28 @@ h1{
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-tourisme.png");
+    list-style-image: url("../photos/icon-tourisme.png");
 }
 
 .li-nav-resto {
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-resto.png");
+    list-style-image: url("../photos/icon-resto.png");
 }
 
 .li-nav-quizz {
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-quizz.png");
+    list-style-image: url("../photos/icon-quizz.png");
 }
 
 .li-nav-photos {
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("../code/photos/icon-photos.png");
+    list-style-image: url("../photos/icon-photos.png");
 }
 
 a{
@@ -130,34 +130,6 @@ a:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hymne{
-    height: 700px;
-    background-color: #ffffff;
-}
-
-.titre-hymne{
-    position: absolute;
-    color: #3366FF;
-    left: 10%;
-    top: 50%;
-
-    text-decoration: underline;
-}
-
-.hymne-video{
-    top: 60%
-}
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     position: absolute;
     width: 97.45%;
@@ -188,11 +160,23 @@ a:hover{
     display: block;
 }
 
+#avis{
+    position: relative;
+    height: 493px;
+    background-color: white;
+}
+
+#avis-1{
+    height: 350px;
+    position: relative;
+    background-color: white;
+}
+
 .avis-personne{
     position: absolute;
     height: 232px;
-    top: 245px;
-    left: 10%;
+    top: 30%;
+    left: 40%;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -206,21 +190,12 @@ a:hover{
     position: absolute;
     width: 195px;
     height: 58px;
-    left: 57%;
-    top: 350px;
+    left: 50%;
+    top: 50%;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-size: 25px;
-}
-
-
-.fleche-droite{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 80%;
-    top: 245px;
 }
 
 .photo-personne{
@@ -228,7 +203,7 @@ a:hover{
     width: 200px;
     height: 200px;
     left: 20%;
-    top: 70%;
+    top: 30%;
 }
 
 .button-avis1{
@@ -286,16 +261,4 @@ a:hover{
     font-size: 19px;
     border-radius: 0.25rem;
     min-width: 200px;
-}
-
-
-
-.avis-personne{
-    top: 74%;
-    left: 35%;
-    text-align: left;
-}
-
-.nom-personne{
-    top: 87%;
 }
