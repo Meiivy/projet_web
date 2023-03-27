@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="quizz.css">
+    <link rel="stylesheet" href="lib.css">
+    <script src="CODE_QUIZZ/lib.js"></script>
+    <script src="/code_quizz/quizz.js" defer></script>
+    <title>Quizz Reuinon </title>
+</head>
+<body>
+    <header>
+        <div class="nav-header"></div> <!-- afin de mettre en surbrillance la barre de navigation-->
+       <img class="drapeau" src="../photos/drapeau.png" alt="dreapeau de l'ile de la reunion"/>
+       <h1 class="titre"><a href="main.html">Ile de la Reunion</a></h1> 
+            <nav>
+                <ul class="navigateur">
+                    <div class="dropdown">
+                        <li class="li-nav-avis"><a href="avis.html">Avis</a></li>
+                        <div class="dropdown-contenu">
+                            <p><a href="avis.html#avis-1">Avis 1</a></p>
+                            <p><a href="avis2.html#avis-1">Avis 2</a></p>
+                            <p><a href="avis3.html#avis-13">Avis 3</a></p>
+                        </div>
+                    </div>
+                        
+                    <div class="dropdown">
+                        <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a></li>
+                        <div class="dropdown-contenu">
+                            <p><a href="tourisme.html#titre-section">Le volcan</a></p>
+                            <p><a href="tourisme.html#titre-section2">Les plages</a></p>
+                            <p><a href="tourisme.html#titre-section3">Les forets</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <li class="li-nav-resto"><a href="restaurants.html">Restaurants</a></li>
+                        <div class="dropdown-contenu">
+                            <p>1</p>
+                            <p>2</p>
+                        </div>
+                    </div>
+                        
+                        <li class="li-nav-quizz"><a href="quizz.html">Quizz</a></li>
+                        <li class="li-nav-photos"><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
+        <img class="header" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+
+        <div class="titre-photo">
+            <h1>QUIZZ GENIAL</h1>
+        </div>
+        
+    </header>
+
+    <!-- Quizz -->
+
+    <div id="page">
+        <div id="container">
+            <h1 id="app-title">Quizz Reunion </h1>
+            <div id="quizz-container">
+                <div class="questions">
+                    <h2 id="question"></h2>
+                    <ol type="A">
+                    <li class="option"><span
+                        id="option0" onclick ="calcScore(this)"></span></li>
+                    <li class="option"><span 
+                        id="option1" onclick ="calcScore(this)" ></span></li>
+                    <li class="option"><span 
+                        id="option2" onclick ="calcScore(this)" ></span></li>
+                    <li class="option"><span 
+                        id="option3" onclick ="calcScore(this)" ></span></li>        
+                    </ol>
+                    <div class="stats">
+                        <h4 id="stat"></h4>
+                    </div>
+                    </div>
+
+                <div class="buttons">
+                    <button type="button"
+                    class="next">Suivant</button>
+                    <button type="button" id="home-btn" onclick="handleBackToHome()">
+                        Back to home
+                    </button>
+                </div>
+            </div>
+
+            <!-- tableau des scores -->
+            <div>
+                <div id="scoreboard">
+                    <img src="" alt="">
+                    <h2 id="score-title"> Out Score !!! (Votre Score) </h2>
+                    <h2 id="score"></h2>
+                    <div class="buttons">
+                        <button type="button" id="score-btn" onclick="backToQuizz()">
+                            Back to Quizz
+                        </button>
+                        <button type="button" id="check-answer" onclick="checkAnswer()">
+                            Check Answers
+                        </button>
+                        <button type="button" id="home-btn" onclick="handleBackToHome()">
+                            Back to home
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- answers section -->
+            <div id="answerBank">
+                <h2>Answers :</h2>
+                <ol type="1" id="answers">
+
+                </ol>
+                <a href="https://google.fr" target="_blank">Back To Home</a>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
