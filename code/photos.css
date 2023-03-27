@@ -24,6 +24,12 @@ color: #3366FF;
 
 .photo2{
 position: absolute;
-left: 40%;
+left: 60%;
 top: 20%;
+}
+
+.photo3{
+    position: absolute;
+    left: 20%;
+    top: 60%;
 }
