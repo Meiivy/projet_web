@@ -1,0 +1,269 @@
+header{ 
+    background-size: cover;
+    width: 98.5%;
+    height: 400px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.drapeau{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 68px;
+    top: 15px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+}
+
+.titre{
+    position: absolute;
+    text-decoration-line: underline;
+    width: 320px;
+    height: 58px;
+    left: 100px;
+    top: 20px;
+    font-size: 18px;
+}
+
+
+.navigateur {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+    width: 36%;
+    height: 50px;
+    vertical-align: middle;
+    left: 60%;
+}
+
+
+.li-nav-avis {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-avis.png");
+    color: red;
+}
+
+.li-nav-tourisme {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-tourisme.png");
+}
+
+.li-nav-resto {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-resto.png");
+}
+
+.li-nav-quizz {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-quizz.png");
+}
+
+.li-nav-photos {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("../photos/icon-photos.png");
+}
+
+a{
+    color: red;
+}
+
+a:hover{
+    color: rgb(255, 153, 0);
+}
+
+.nav-header{
+    position: absolute;
+    width: 98%;
+    height: 80px;
+    left: 8px;
+
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+}
+
+.titre-photo {
+    position: absolute;
+    height: 154px;
+    left: 150px;
+    top: 41%;
+
+    font-style: italic;
+    color: white;
+    font-size: 50px;
+
+}
+
+.dropdown-contenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff91;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-contenu {
+    display: block;
+}
+
+/*FIN HEADER*/
+
+
+#app-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin: 0 0 40px 20px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title{
+
+}
+
+body{
+    font-family: sans-serif;
+    background-size: cover;
+    height: 100vh;
+}
+
+#container{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+#page{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background: url('../photos/interrogation.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.questions{
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: default;
+}
+
+#answerBank{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.buttons{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.stats{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.option{
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    background:rgba(200, 222, 228, 0.682) ;
+    border-radius: 1rem;
+    border-bottom: solid 0.1rem black;
+}
+
+.option:hover{
+    color: cadetblue;
+}
+
+span{
+    display: block;
+    padding: 0.2rem 0.9rem;
+    border-radius: 1rem;
+}
+
+button{
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    background: rgba(196, 152, 70, 0.82);
+    margin-bottom: 0.5rem;
+    min-width: 10rem;
+}
+
+button:active{
+    background: lavender;
+}
+
+#scoreboard,#answerBank{
+    width: 20rem;
+    background: rgba(230,230,250,0.77);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
+    background-color: rgb(223, 207, 207);
+}
+
+#score-title{
+    margin: 1rem 0;
+}
+#score-btn,#check-answer{
+    margin-top: 1rem;
+}
+#score{
+    font-size: 2.5rem;
+}
+#answerBank li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+#answers{
+    margin-top: 1rem;
+}
+
+#home-btn{
+    position:relative ;
+    margin-top: 0.5rem;
+    margin-bottom: 1 rem;
+}
