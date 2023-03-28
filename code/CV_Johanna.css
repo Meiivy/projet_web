@@ -1,5 +1,19 @@
+html{
+    background-color: #ffffff;
+}
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 5%;
+
+    background-color: black;
+    border-radius: 465.5px;
 }
 
 h1{
@@ -10,20 +24,68 @@ h1{
 .rectangle-gauche{  
     position: absolute;
     width: 20%;
-    height: 100%;
-    top: 20%;
+    height: 130%;
+    top: 25%;
 
-    background-color:aquamarine;
+    background-color:#D7EBF3;
 }
 
 .texte-rectangle-gauche{
     position: absolute;
-    width: 20%;
-    height: 80%;
-    left: 50%;
+    width: 70%;
+    height: 50%;
+    left: 10%;
+    right: 30%;
+    top: 5%;
+    bottom: 5%;
+    padding: 10px;
 
-    background-color: blueviolet;
+    background-color: rgba(188, 133, 240, 0);
 }
 
+.texte-profil{
+    position: relative;
+    width: 93%;
 
-/* test*/
+    background-color: rgba(184, 184, 255, 0);
+    text-align: justify;
+    padding: 10px;
+}
+
+.centre-interets{
+    position: relative;
+    top: 10%;
+
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.langues{
+    position: relative;
+    top: 20%;
+
+    
+    background-color: rgba(255, 235, 205, 0);
+}
+
+.titre{
+    background-color: rgba(0, 0, 255, 0);
+
+    position: absolute;
+    width: 1327px;
+    height: 225px;
+    left: 21%;
+}
+
+.texte-titre{
+    position: relative;
+    font-size: 55px;
+    text-align: center;
+}
+
+.sous-texte-titre{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 18%;
+
+}
