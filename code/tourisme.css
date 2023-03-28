@@ -25,7 +25,6 @@ h1{
     width: 320px;
     height: 58px;
     left: 100px;
-    top: 20px;
     font-size: 18px;
 }
 
@@ -93,7 +92,7 @@ a:hover{
 
 .nav-header{
     position: absolute;
-    width: 97.5%;
+    width: 98.5%;
     height: 80px;
     left: 8px;
     top: 8px;
@@ -108,13 +107,13 @@ a:hover{
 }
 
 .titre-photo {
-    position: absolute;
+    position: relative;
     height: 154px;
     left: 150px;
-    top: 252px;
+    top: 9%;
 
     font-style: italic;
-    color: white;
+    color: rgb(255, 0, 0);
     font-size: 90px;
 }
 

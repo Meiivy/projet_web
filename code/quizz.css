@@ -91,9 +91,8 @@ a:hover{
 
 .nav-header{
     position: absolute;
-    width: 98%;
+    width: 98.5%;
     height: 80px;
-    left: 8px;
 
     background-color: rgb(255, 255, 255);
     opacity: 50%;
@@ -108,12 +107,41 @@ a:hover{
     position: absolute;
     height: 154px;
     left: 150px;
-    top: 41%;
+    top: 32%;
 
     font-style: italic;
     color: white;
     font-size: 50px;
 
+}
+
+.titre-souspart {
+    position: absolute;
+    height: 118px;
+    left: 150px;
+    top: 70px;
+    text-decoration: underline;
+
+    font-size: 40px;
+    color:#3366FF;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer{
+    position: absolute;
+    width: 97.45%;
+    height: 50px;
+    top: 1700px;
+
+    background-color: #3366FF;
+}
+
+.nous{
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 .dropdown-contenu {
@@ -266,4 +294,20 @@ button:active{
     position:relative ;
     margin-top: 0.5rem;
     margin-bottom: 1 rem;
+}
+
+.footer{
+    position: absolute;
+    width: 97.45%;
+    height: 50px;
+    top: 140%;
+
+    background-color: #3366FF;
+}
+
+.nous{
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
