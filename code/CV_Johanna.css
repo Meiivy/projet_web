@@ -50,6 +50,7 @@ h3{
     top: 5%;
     bottom: 5%;
     padding: 10px;
+    line-height: 1.5;
 
     background-color: rgba(188, 133, 240, 0);
 }
@@ -163,7 +164,7 @@ h3{
     position: absolute;
     width: 97.45%;
     height: 50px;
-    top: 243%;
+    top: 250%;
 
     background-color: #3366FF;
 }

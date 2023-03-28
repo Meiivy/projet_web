@@ -107,13 +107,13 @@ a:hover{
 }
 
 .titre-photo {
-    position: relative;
+    position: absolute;
     height: 154px;
     left: 150px;
-    top: 9%;
+    top: 27%;
 
     font-style: italic;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 90px;
 }
 

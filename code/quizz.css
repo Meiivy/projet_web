@@ -115,6 +115,8 @@ a:hover{
 
 }
 
+/*fin header*/
+
 .titre-souspart {
     position: absolute;
     height: 118px;
@@ -172,10 +174,6 @@ a:hover{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#title{
-
 }
 
 body{
