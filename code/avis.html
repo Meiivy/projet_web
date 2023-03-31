@@ -15,6 +15,7 @@
     <head>
         <meta charset="utf-8">
         <title>Projet de programmation web</title>
+        <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="avis.css">
         <link rel="stylesheet" href="cssphoto.css">
         <link rel="stylesheet" href="photos_avis.css">
@@ -23,103 +24,146 @@
 
     <body>
         <header>
-            <div class="nav-header"></div> <!-- afin de mettre en surbrillance la barre de navigation-->
-           <img class="drapeau" src="../photos/drapeau.png" alt="dreapeau de l'ile de la reunion"/>
-           <h1 class="titre"><a href="main.html">Ile de la Reunion</a></h1> 
-                <nav>
-                    <ul class="navigateur">
-                        <div class="dropdown">
-                            <li class="li-nav-avis"><a href="avis.html">Avis</a></li>
+            <img class="imageheader" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+            <div class="titre-photo">
+                <h1>Avis 1</h1>
+            </div>
+        </header>
+                    
+            <nav>
+                <div class='dropdownrespon'> 
+                    <svg width="60" height="50">
+                        <rect x="5" y="2" rx="2" ry="2" width="50" height="5"
+                            style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
+                        <rect x="5" y="12" rx="2" ry="2" width="50" height="5"
+                            style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
+                        <rect x="5" y="22" rx="2" ry="2" width="50" height="5"
+                            style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
+                    </svg> 
+                </div>
+
+                <ul class="navigateur">
+                    <li class="home"><a href="main.html">Accueil</a></li>
+
+                    <div class="dropdown">
+                        <li class="li-nav-avis"><a href="avis.html" id="dropdown-toggle">Avis</a>
                             <div class="dropdown-contenu">
-                                <p><a href="avis.html#avis">Avis 1</a></p>
-                                <p><a href="avis2.html#avis">Avis 2</a></p>
-                                <p><a href="avis3.html#avis">Avis 3</a></p>
+                                <p><a href="avis1.html#avis-1">Avis 1</a></p>
+                                <p><a href="avis2.html#avis-1">Avis 2</a></p>
+                                <p><a href="avis3.html#avis-13">Avis 3</a></p>
                             </div>
-                        </div>
-                            
-                        <div class="dropdown">
-                            <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a></li>
+                        </li>
+                    </div>
+                        
+                    <div class="dropdown">
+                        <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a>
                             <div class="dropdown-contenu">
                                 <p><a href="tourisme.html#titre-section">Le volcan</a></p>
                                 <p><a href="tourisme.html#titre-section2">Les plages</a></p>
                                 <p><a href="tourisme.html#titre-section3">Les forets</a></p>
                             </div>
-                        </div>
-                        
-                        <div class="dropdown">
-                            <li class="li-nav-resto"><a href="restaurants.html">Restaurants</a></li>
-                            <div class="dropdown-contenu">
-                                <p>1</p>
-                                <p>2</p>
-                            </div>
-                        </div>
-                            
-                            <li class="li-nav-quizz"><a href="quizz.html">Quizz</a></li>
-                            <li class="li-nav-photos"><a href="photos.html">Photos</a></li>
-                    </ul>
-                </nav>
-            <img class="header" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
-            <h1 class="titre-photo">LES AVIS</h1>
-        </header>
+                        </li>
+                    </div>
+                
+                    <li class="li-nav-resto"><a href="restaurants.html">Restaurants</a></li>
+                    <li class="li-nav-quizz"><a href="quizz.html">Quizz</a></li>
+                    <li class="li-nav-photos"><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
 
         <div id="avis">
             <div class="flex-end">
-                <a href="avis.html#avis" class="button-avis1">Avis 1</a>
+                <a href="avis.html" class="button-avis">Donnez votre avis</a>
+                <a href="avis1.html#avis" class="button-avis1">Avis 1</a>
                 <a href="avis2.html#avis" class="button-avis2">Avis 2</a>
                 <a href="avis3.html#avis" class="button-avis3">Avis 3</a>
             </div>
-
-            <div id="avis-1">
-                <img class="photo-personne" /> <!-- mettre une photo d'une personne shutterstock-->
-                <p class="avis-personne">
-                        "Magnifiques paysages, temps superbe ! <br>
-                        Nous avons passés du bon temps sur <br>
-                        l’Île de la Reunion."
+        </div>
+        
+        <form name='principal' action='formulaire_1.html' method='get'>
+            <h1> Test formulaire </h1>
+            <fieldset>
+                <label for='age'>Votre age:</label>
+                <input type='text' id='age' name="user_age" size='2'/>
+            </fieldset>
+            <fieldset>
+                <legend>Votre Sexe:</legend>
+                <input type="radio"	id='male' name='user_sex' value='M'/>    
+                <label for="male">Homme </label>
+                <input type="radio"	id='female' name='user_sex' value='F'/>
+                <label for="female">Femme </label>
+            </fieldset>
+            <fieldset>
+                <legend>Coche les noms des gens dont vous avez déjà entendu parler:</legend>
+                <input type="checkbox" id='name_1' name="user_famous" value='Rasmus Lerdorf'/>
+                <label for="name_1">Rasmus Lerdorf </label>
+                <input type="checkbox" id='name_2' name="user_famous" value='Lisa Schmeiser'/> 
+                <label for="name_2">Lisa Schmeiser </label>
+                <input type="checkbox" id='name_3' name="user_famous" value='Al Gore'/> 
+                <label for="name_3">Al Gore </label>
+                <input type="checkbox" id='name_4' name="user_famous" value='Boutros Boutros-Gali'/> 
+                <label for="name_4">Boutros Boutros-Gali </label>
+            </fieldset>
+            <fieldset>
+                <label for="navigateur">Quel est votre navigateur préféré ?</label>
+                <select name='user_nav' id='navigateur'>
+                    <option>  Internet Explorer </option>
+                    <option>  FireFox </option>
+                    <option>  Mozilla </option>
+                    <option>  Lynx </option>
+                    <option>  Mosaic </option>
+                    <option selected='selected'>  Netscape </option>
+                    <option>  SlipKnot </option>
+                    <option>  Web Explorer </option>
+                    <option> Aucun de ceux proposés </option>
+                </select>	
+            </fieldset>
+            <fieldset>
+                <label for="glace">Quel est votre parfum de glace préféré ?</label>
+                <select name='user_glace' id='glace' size='3'>
+                    <option value='Vanille'> Vanille </option>
+                    <option value='Chocolat'> Chocolat </option>
+                    <option value='Cerise'> Cerise </option>
+                    <option value='Bannane'> Bannane </option>
+                </select>	
+            </fieldset>
+            <fieldset>
+                <label for="login">Donnez votre login:</label>
+                <input type='text' id='login' name="usr_login" size='20'/>
+            </fieldset>
+            <fieldset>
+                <legend>Avez vous un surnom?:</legend>
+                <input type="radio"	id='no_surname' name='surname' value='N'/> 
+                <label for="no_surname">Non</label>    
+                <input type="radio"	id='yes_surname' name='surname' value='Y'/> 
+                <label for="yes_surname">Oui</label><label for="surname_txt">, C'est:</label>   
+                <input type='text' id="surname_txt" name="surname_text" size='20'/>
+            </fieldset>
+            <fieldset>
+                <label for="devise">Entrez votre devise personelle:</label>
+                <p>
+                <textarea id='devise' name='usr_devise' cols="40" rows='4'>C'est la vie</textarea>
                 </p>
-                <p class="nom-personne">
-                        - Tracy 
-                </p>    
-            </div>
+            </fieldset>
+            <p>
+                Entrez votre devise personelle:
+                <!--<input type='submit'/>-->
+                <input type="button" value="Envoyez vos réponses" onclick="printinfo()"/> 
+                <input type='reset'/>
+            </p>
+        </form>
+    
+        <div id='Result'>
+            Resultats
         </div>
-            
-        <div class="photo">
-            <div class="titrephoto">
-                <h1>Les photos</h1>
-            </div>
-            <div class="photo1">
-                <img id="myImg" src="../photos/photo-avis-1.jpg" alt="photo de vacances" style="width:100%;max-width:300px"/>
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-
-            <div class="photo2">
-                <img id="myImg2" src="../photos/photo-avis-1.jpg" alt="photo de vacances" style="width:100%;max-width:300px"/>
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-
-            <div class="photo3">
-                <img id="myImg2" src="../photos/photo-avis-1.jpg" alt="photo de vacances" style="width:100%;max-width:300px"/>
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-        </div>
-            
+        
         
 
         <div class="footer">
             <p class="nous">Site fait par <a href="CV_marine.html">B.Marine</a>
             et <a href="CV_Johanna.html">S.Johanna</a></p>
         </div>
-        <script type="text/javascript" src="main.js"></script>
+        
+        <script type="text/javascript" src="formulaire.js"></script>
     </body>
 </html>
