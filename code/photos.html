@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>photos</title>
+        <link rel="stylesheet" href="photos.css">
+        <link rel="stylesheet" href="photos2.css">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="nav-header"></div> <!-- afin de mettre en surbrillance la barre de navigation-->
+           <img class="drapeau" src="../photos/drapeau.png" alt="dreapeau de l'ile de la reunion"/>
+           <h1 class="titre"><a href="main.html">Photos</a></h1> 
+                <nav>
+                    <ul class="navigateur">
+                        <div class="dropdown">
+                            <li class="li-nav-avis"><a href="avis.html">Avis</a></li>
+                            <div class="dropdown-contenu">
+                                <p><a href="avis.html#avis-1">Avis 1</a></p>
+                                <p><a href="avis2.html#avis-1">Avis 2</a></p>
+                                <p><a href="avis3.html#avis-13">Avis 3</a></p>
+                            </div>
+                        </div>
+                            
+                        <div class="dropdown">
+                            <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a></li>
+                            <div class="dropdown-contenu">
+                                <p><a href="tourisme.html#titre-section">Le volcan</a></p>
+                                <p><a href="tourisme.html#titre-section2">Les plages</a></p>
+                                <p><a href="tourisme.html#titre-section3">Les forets</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <li class="li-nav-resto"><a href="restaurants.html">Restaurants</a></li>
+                            <div class="dropdown-contenu">
+                                <p>1</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                            
+                            <li class="li-nav-quizz"><a href="quizz.html">Quizz</a></li>
+                            <li class="li-nav-photos"><a href="photos.html">Photos</a></li>
+                    </ul>
+                </nav>
+            <img class="header" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+
+            <div class="titre-photo">
+                <h1>PHOTOS TROP BELLES</h1>
+            </div>
+        </header>
+
+        <h1>Quelques photos de l'île de la Réunion</h1>
+        <div class="bouton"></div>
+        <div id="slider">
+            <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+            <div id="suivant" onclick="ChangeSlide(1)">></div>
+            <img class="photos-photos" src="../photos/IMG_4404.jpg" alt="La forêt de peupliers" id="slide">
+        </div>
+
+        <div class="footer">
+            <p class="nous">Site fait par <a href="CV_marine.html">B.Marine</a>
+            et <a href="CV_Johanna.html">S.Johanna</a></p>
+        </div>
+
+        <script type="text/javascript" src="photos.js"></script>
+    </body>
+</html>

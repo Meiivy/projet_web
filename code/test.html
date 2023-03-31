@@ -1,33 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Projet de programmation web</title>
-        <link rel="stylesheet" href="test.css">
-        <script type="text/javascript" src="main.js"></script>
-    </head>
 
-    <div class="container">
-        <div class="row">
-           <div class="col-md-3"></div>
-           <div class="col-md-6">
-              <h1 id="message">
-                  Hii! GeeksforGeeks people
-              </h1>
-              <img  id="myImage" 
-                    src="../code/photos/drapeau.png"  >
-           </div>
-           <div class="col-md-3"></div>
-        </div>
-     </div>
-     <div class="button">
-        <button class="btn btn-warning" 
-                onclick=before();>
-            Before
-        </button>
-        <button  class="btn btn-success" 
-                 onclick=afterr();>
-            Afterr
-        </button>
-     </div>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <title>Slider</title>
+    <link rel="stylesheet" href="slider.css">
+    <script type="text/javascript" src="slider.js"></script>
+
+</head>
+
+<body>
+    <h1>Le beau slider</h1>
+    <div id="slider">
+        <img src="../photos/foret.jpeg" alt="La forêt de peupliers" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+    </div>
+</body>
+
+</html>

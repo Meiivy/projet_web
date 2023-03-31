@@ -1,35 +1,43 @@
-.photo{
-position: absolute;
-width: 97.45%;
-height: 800px;
-padding-left: 2px;
-top: 900px;
-
-background-color: rgb(192, 38, 38);
+h1{
+    text-align: center;
 }
 
-.photo1{
-position: absolute;
-left: 20%;
-top: 20%;
+.photos-photos{
+    width: 1000px;
+    padding-left: 6%;
 }
 
-.titrephoto{
-position: absolute;
-left: 10%;
-top: 5%;
-text-decoration: underline;
-color: #3366FF;
+#slider {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
-.photo2{
-position: absolute;
-left: 60%;
-top: 20%;
-}
-
-.photo3{
+#precedent,
+#suivant {
     position: absolute;
-    left: 20%;
-    top: 60%;
+
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    font-size: 80px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 1;
 }
