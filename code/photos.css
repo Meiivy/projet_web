@@ -1,10 +1,12 @@
 h1{
     text-align: center;
+    top: 40%;
 }
 
 .photos-photos{
     width: 1000px;
     padding-left: 6%;
+    top: 30%;
 }
 
 #slider {
