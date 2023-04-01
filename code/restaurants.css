@@ -1,0 +1,318 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("NUAGE.jpg");
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    background-position: center;
+    /* background-repeat: repeat; */
+    background-size: cover;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+    max-width: 50px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.menu-icon{
+    position: relative;
+    width: 7%;
+    max-width: 30px;
+    cursor: pointer;
+    margin-left: 4%;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 3%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 3vh;
+    display: block;  
+}
+
+.row{
+    display: flex;
+    min-height: 88vh;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 10vh;
+}
+
+p{
+    color: #fff;
+    font-size: 3vh;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:15px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card1{
+    background-image: url("NORD.png");
+}
+
+.card2{
+    background-image: url("OUEST.JPG")
+}
+.card3{
+    background-image:url("SUD2.png") ;
+}
+
+.card4{
+    background-image:url("EST.png") ;
+}
+
+.card a{
+    color: rgb(8, 6, 6);
+    font-size: 15px;
+    display: block;
+    background-color: rgba(169, 157, 164, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h5{
+    font-size: 50px;
+    color: rgba(208, 215, 220, 0.8);
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin-bottom: 5%;
+  }
+  
+  .menu-icon {
+    margin-left: 0;
+    margin-right: 5%;
+  }
+  
+  nav ul li {
+    margin-left: 0;
+    margin-right: 5%;
+  }
+  
+  h1 {
+    font-size: 6vh;
+  }
+  
+  p {
+    font-size: 2vh;
+  }
+  
+  .card {
+    width: 60%;
+    max-width: none;
+    margin: 5vh 2.5vh;
+    padding: 2vh 3vh;
+  }
+
+h5{
+    font-size: 20px;
+    color: rgba(208, 215, 220, 0.8);  
+}
+.card a{
+    color: rgb(8, 6, 6);
+    font-size: 10px;
+    display: block;
+    background-color: rgba(169, 157, 164, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+}
+/* header{
+    position: relative;
+    font-family: Snell Roundhand, cursive;
+    font-size: 40px;
+    text-align: center;
+    background: url('header_restaurant.png');
+    background-size : 1538 px 234 px;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 100px 50px 40px 50px ;
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+} */
+
+/* body{
+    background: url('NUAGE.jpg');
+    /* background-repeat: no-repeat; */
+ 
+
+/* header {
+    position: relative;
+    font-family: Snell Roundhand, cursive;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    background:rgba(228, 206, 200, 0.4) ;
+    border-radius: 2rem;
+    border-bottom: solid 0.1rem black;
+    block-size: 100px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2 {
+    display: inline-block;
+    margin: auto;
+}
+
+
+.localisation{
+    position: relative;
+    background-color: blue;
+}  */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("NUAGE.jpg");
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    background-position: center;
+    /* background-repeat: repeat; */
+ 
+
+/* .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 90px;
+}
+
+p{
+    color: #fff;
+} */
+
+/* .card{
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:15px 15px;
+    background-position: center;
+    background-size: cover;
+} */
+
+
+/* .card1{
+    background-image: url("NORD.png")
+}
+
+.card2{
+    background-image: url("OUEST.JPG")
+}
+.card3{
+    background-image:url("SUD2.png") ;
+}
+
+.card4{
+    background-image:url("EST.png") ;
+}  */

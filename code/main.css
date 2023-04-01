@@ -22,7 +22,6 @@ h1{
 }
 
 nav {
-    position: sticky;
     top: 0px; /*pour qu'il reste en place*/
     background-color: #ffffff;
     z-index: 999; /*pour qu'il s'affiche au dessus des blocs*/
@@ -45,7 +44,6 @@ nav {
     list-style-image: url("../photos/icon-avis.png");
     color: red;
 }
-
 
 .li-nav-avis {
     text-decoration-line: underline;
@@ -132,19 +130,16 @@ a:hover{
 
 /*fin header*/
 
-div.main{
-    width: 100%;
-    margin: 0 auto;
+div.main {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .titre-souspart {
     position: absolute;
     height: 118px;
-    left: 150px;
+    left: 15%;
     text-decoration: underline;
     z-index: 1;
 
@@ -171,28 +166,31 @@ div.main{
 }
 
 .carte{
-    position: absolute;
+    position: relative;
     width: 97.45%;
     height: 700px;
     padding-left: 2px;
-    z-index: 1;
+    z-index: 100;
 
     background-color: rgb(255, 255, 255);
 }
 
 iframe{
-    position: absolute;
-    width: 1000px;
-    height: 550px;
-    left: 20%;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    left: 10%;
     top: 15%;
+
+
+    background-color: red;
 }
 
 .footer{
     position: absolute;
     width: 97.45%;
     height: 50px;
-    top: 1794px;
+    top: 230%;
 
     background-color: #3366FF;
 }
@@ -203,5 +201,3 @@ iframe{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
-
-

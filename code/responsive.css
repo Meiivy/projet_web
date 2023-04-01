@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .navigateur li{
+        .navigateur li{
         display: block;
         position: absolute;
         top: -48px;
@@ -87,4 +87,38 @@
     .dropdown-contenu.active{
         display: block;
     }
+
+    div.main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+    /*header respon
+    header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* ou une autre valeur 
+    }
+
+    .titre {
+        width: 100%;
+        top: 40%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .imageheader {
+        height: 200px; /*ajuster la hauteur selon vos besoins
+    }
+
+    .titre-photo {
+        position: static;
+        height: 100%;
+        width: 100%;
+        text-align: center; 
+        font-size: 32px;
+      }
+    */
 }
