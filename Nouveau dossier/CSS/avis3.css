@@ -1,0 +1,211 @@
+
+
+
+.photo-personne {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+     margin-top: 15px;
+     margin-left: 45%;
+    
+}
+
+.avis-personne {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.nom-personne {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+/* ----------- Photos ----------- */
+.titrephoto {
+    margin: 20px;
+    text-align: center;
+}
+
+.photo1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.photo1 img {
+    max-width: 100%;
+}
+
+
+
+#avis{
+    position: relative;
+    height: 493px;
+    background-color: white;
+}
+
+#avis-3{
+    height: 350px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-right: 5%;
+    display: block;
+}
+
+header h1{
+    position: relative;
+    display: block;
+    block-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: flex-start;
+    text-align: center;
+    left: 0;
+}
+
+
+.button-avis{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #fcf18f;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+.button-avis1{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #cfe2ff;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+.flex-end{
+    padding: 50px 0px 0px 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-avis2{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #fcb98f;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+.button-avis3{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #8ffc9c;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+.footer{
+    position: absolute;
+    width: 97.45%;
+    height: 50px;
+    top: 250%;
+    background-color: rgba(22, 154, 191, 0.5);
+    }
+    
+.nous{
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+ 
+    .navigateur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        height: 50px;
+        display: inline-block;
+        
+    }
+
+    .flex-end{
+        padding: 50px 0px 0px 90px;
+        display: flex;
+        justify-content: space-around;
+        display: inline-block;
+    }
+
+    .nom-personne {
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+    }
+    
+
+
+    .avis-personne {
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .photo-personne {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+         margin-top: 15px;
+         margin-left: 30%;
+        
+    }
+
+    }
+    
+
+
+

@@ -1,0 +1,145 @@
+<!--commentaires
+- html5, css, javascript
+- sujet du site libre 
+- sources concernant la redaction, les images et la concept : cité
+- formulaire obligatoire
+- cv sous format html (coder le cv), obligatoire
+- fichiers utilisés obligé d'être dans des fichiers diff
+- commenter le code
+- RESPONSIVE
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Projet de programmation web</title>
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/avis.css">
+        <link rel="stylesheet" href="../CSS/cssphoto.css">
+        <link rel="stylesheet" href="../CSS/photos_avis.css">
+    </head>
+
+
+    <body>
+        <header>
+            <img class="imageheader" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+            <div class="titre-photo">
+                <h1>Avis 1</h1>
+            </div>
+        </header>
+                    
+            <nav>
+                <ul class="navigateur">
+                    <li class="home"><a href="../HTML/main.html">Accueil</a></li>
+
+                    <div class="dropdown">
+                        <li class="li-nav-avis"><a href="../HTML/avis.html" id="dropdown-toggle">Avis</a>
+                        </li>
+                    </div>
+                        
+                    <div class="dropdown">
+                        <li class="li-nav-tourisme"><a href="../HTML/tourisme.html">Tourisme</a>
+                        </li>
+                    </div>
+                
+                    <li class="li-nav-resto"><a href="../HTML/restaurants.html">Restaurants</a></li>
+                    <li class="li-nav-quizz"><a href="../HTML/quizz.html">Quizz</a></li>
+                    <li class="li-nav-photos"><a href="../HTML/photos.html">Photos</a></li>
+                </ul>
+            </nav>
+
+        <div id="avis">
+            <div class="flex-end">
+                <a href="../HTML/avis.html" class="button-avis">Donnez votre avis</a>
+                <a href="../HTML/avis1.html#avis" class="button-avis1">Avis 1</a>
+                <a href="../HTML/avis2.html#avis" class="button-avis2">Avis 2</a>
+                <a href="../HTML/avis3.html#avis" class="button-avis3">Avis 3</a>
+            </div>
+        </div>
+        
+        <form name='principal' action='formulaire_1.html' method='get'>
+            <h1> Test formulaire </h1>
+            <fieldset>
+                <label for='age'>Votre age:</label>
+                <input type='text' id='age' name="user_age" size='2'/>
+            </fieldset>
+            <fieldset>
+                <legend>Votre Sexe:</legend>
+                <input type="radio"	id='male' name='user_sex' value='M'/>    
+                <label for="male">Homme </label>
+                <input type="radio"	id='female' name='user_sex' value='F'/>
+                <label for="female">Femme </label>
+            </fieldset>
+            <fieldset>
+                <legend>Dans quel hotel étiez vous ?</legend>
+                <input type="checkbox" id='name_1' name="user_famous" value='Hôtel Select - Réunion '/>
+                <label for="name_1">Hôtel Select - Réunion  </label>
+                <input type="checkbox" id='name_2' name="user_famous" value='Bellepierre'/> 
+                <label for="name_2">Bellepierre </label>
+                <input type="checkbox" id='name_3' name="user_famous" value='Tulip inn Sainte Clotilde'/> 
+                <label for="name_3">Tulip inn Sainte Clotilde </label>
+                <input type="checkbox" id='name_4' name="user_famous" value='Le Juliette Dodu '/> 
+                <label for="name_4">Le Juliette Dodu  </label>
+            </fieldset>
+            <fieldset>
+                <label for="navigateur">Une note de 1 à 5 ?</label>
+                <select name='user_nav' id='navigateur'>
+                    <option selected="selected">  1</option>
+                    <option>  2 </option>
+                    <option>  3 </option>
+                    <option>  4 </option>
+                    <option>  5 </option>
+                    <option> Plus encore </option>
+                </select>	
+            </fieldset>
+            <fieldset>
+                <label for="glace">Votre activité preferée de vos vacances ?</label>
+                <select name='user_glace' id='glace' size='3'>
+                    <option value='Randonnée'> Randonnée </option>
+                    <option value='plage'> Les plages </option>
+                    <option value='Forets'> Balade en forets </option>
+                    <option value='Animaux'> Les animaux </option>
+                </select>	
+            </fieldset>
+            <fieldset>
+                <label for="login">Nom prénom s'il vous plait ?</label>
+                <input type='text' id='login' name="usr_login" size='20'/>
+            </fieldset>
+            <fieldset>
+                <legend>Avez vous pris des bonbons sur le comptoire ?</legend>
+                <input type="radio"	id='no_surname' name='surname' value='N'/> 
+                <label for="no_surname">Non</label>    
+                <input type="radio"	id='yes_surname' name='surname' value='Y'/> 
+                <label for="yes_surname">Oui</label><label for="surname_txt">, pourquoi en avez vous pris ?</label>   
+                <input type='text' id="surname_txt" name="surname_text" size='20'/>
+            </fieldset>
+            <fieldset>
+                <label for="devise">Avis général ?</label>
+                <p>
+                <textarea id='devise' name='usr_devise' cols="40" rows='4'>C'est trop cool</textarea>
+                </p>
+            </fieldset>
+            <p>
+                Fin du formulaire, bravo à vous de l'avoir terminé
+                <!--<input type='submit'/>-->
+                <input type="button" value="Envoyez vos réponses" onclick="printinfo()"/> 
+                <input type='reset'/>
+            </p>
+        </form>
+    
+        <div id='Result'>
+            Resultats
+        </div>
+        
+        
+
+        <div class="footer">
+            <p class="nous">Site fait par <a href="../HTML/CV_marine.html">B.Marine</a>
+            et <a href="../HTML/CV_Johanna.html">S.Johanna</a></p>
+        </div>
+        
+        <script type="text/javascript" src="../JAVASCRIPT/formulaire.js"></script>
+    </body>
+</html>
