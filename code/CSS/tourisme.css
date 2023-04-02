@@ -1,0 +1,204 @@
+.titre-photo {
+    position: absolute;
+    height: 154px;
+    left: 150px;
+    top: 27%;
+
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+}
+
+.home {
+    text-decoration-line: underline;
+    font-weight : bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("/photos/icon-avis.png");
+    color: red;
+}
+
+a{
+    color: red;
+}
+
+a:hover{
+    color: rgb(255, 153, 0);
+}
+
+
+.main-piton{
+    position: relative;
+    width: 90%;
+}
+
+
+#titre-section{
+    position: relative;
+    height: 154px;
+    left: 5%;
+    top: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(8, 2, 2);
+    font-size: 90px;
+    margin: 0;
+}
+
+.texte{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    position: relative;
+    left: 2%;
+    align-items: center;
+}
+
+.photo-plage{
+    position: relative;
+    width: 97.48%;
+    height: 400px;
+    left: 10px;
+    top: 20px;
+}
+
+#titre-section2{
+    position: relative;
+    height: 154px;
+    left: 5%;
+    top: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(8, 2, 2);
+    font-size: 90px;
+}
+
+.texte-section2{
+    position: relative;
+    width: 90%;
+    height: 221px;
+    left: 2%;
+    top: 0px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.photo-foret{
+    position: relative;
+    width: 97.48%;
+    height: 400px;
+    left: 10px;
+    top: 0px;
+}
+
+#titre-section3{
+    position: relative;
+    width: 720px;
+    height: 154px;
+    left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+}
+
+.texte-section3{
+    position: relative;
+    width: 90%;
+    height: 221px;
+    left: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.footer{
+    position: relative;
+    width: 97.45%;
+    height: 50px;
+    background-color: rgba(22, 154, 191, 0.5);
+}
+
+.nous{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    #titre-section{
+        position: relative;
+        height: 154px;
+        left: 5%;
+        top: 20%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        color: rgb(8, 2, 2);
+        font-size: 70px;
+        margin: 0;
+    }
+   
+    .texte{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        line-height: 35px;
+        position: relative;
+        margin-right: 10%;
+        align-items: center;
+        background: rgb(255, 255, 255);
+    }
+
+    #titre-section2{
+        position: relative;
+        height: 154px;
+        left: 5%;
+        top: 20%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        color: rgb(8, 2, 2);
+        font-size: 70px;
+        margin: 0;
+    }
+     
+    .texte-section2{
+        position: relative;
+        width: 90%;
+        height: 221px;
+        left: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .photo-foret{
+        position: relative;
+        width: 97.48%;
+        height: 400px;
+        left: 10px;
+        top: 20%;
+        margin-bottom: 2%;
+    }
+    
+    #titre-section3{
+        position: relative;
+        width: 720px;
+        height: 154px;
+        right: 0%;
+        margin-top: 1%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        font-size: 80px;
+        margin-bottom: 2%;
+    }
+    }
+    

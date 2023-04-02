@@ -1,0 +1,79 @@
+<!--commentaires
+- html5, css, javascript
+- sujet du site libre 
+- sources concernant la redaction, les images et la concept : cité
+- formulaire obligatoire
+- cv sous format html (coder le cv), obligatoire
+- fichiers utilisés obligé d'être dans des fichiers diff
+- commenter le code
+- RESPONSIVE
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Voyage sur la Réunion - main</title>
+        <link rel="stylesheet" href="/CSS/main.css">
+        <!-- <link rel="stylesheet" href="responsive.css"> -->
+    </head>
+
+
+    <body>
+        <a class="retour-HOME" href="home.html"> retour-HOME</a>
+        <header>
+            <img class="imageheader" src="/photos/header2.jpg" alt="photo de l'ile de la réunion" />
+            <div class="titre-photo">
+                <img class="drapeau" src="/photos/drapeau.png" alt="dreapeau de l'ile de la reunion"/>
+                <h1>ILE DE LA REUNION</h1>
+            </div>
+        </header>
+                    
+            <nav>
+                <ul class="navigateur">
+                    <li class="home"><a href="/HTML/main.html">Accueil</a></li>
+
+                    <div class="dropdown">
+                        <li class="li-nav-avis"><a href="/HTML/avis.html" id="dropdown-toggle">Avis</a>
+                        </li>
+                    </div>
+                        
+                    <div class="dropdown">
+                        <li class="li-nav-tourisme"><a href="/HTML/tourisme.html">Tourisme</a>
+                        </li>
+                    </div>
+                
+                    <li class="li-nav-resto"><a href="/HTML/restaurants.html">Restaurants</a></li>
+                    <li class="li-nav-quizz"><a href="/HTML/quizz.html">Quizz</a></li>
+                    <li class="li-nav-photos"><a href="/HTML/photos.html">Photos</a></li>
+                </ul>
+            </nav>
+
+
+            <!--main-->
+            <div class="hymne">
+                <div class="titre-hymne">
+                    <h1>Hymne de l'île de la réunion</h1>
+                </div>
+                <iframe class="hymne-video" width="560" height="315" src="https://www.youtube.com/embed/zdMJGrKJnS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+           
+        
+            <div class="carte">
+                <h1 class="titre-souspart">
+                    Carte de la Réunion
+                </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238172.02599491825!2d55.38687835126258!3d-21.134964376649894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2178778110b8e43b%3A0x4a7f8e89ecdbeaf9!2sLa%20R%C3%A9union!5e0!3m2!1sfr!2sfr!4v1679274563723!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div class="footer">
+                <p class="nous">Site fait par <a href="/HTML/CV_marine.html">B.Marine</a>
+                et <a href="/HTML/CV_Johanna.html">S.Johanna</a></p>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="/JAVASCRIPT/main.js"></script>
+    </body>
+</html>

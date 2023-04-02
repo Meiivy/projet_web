@@ -1,0 +1,124 @@
+/*responsive*/
+@media screen and (max-width: 900px) {
+    div.aside{
+        flex-direction: row;
+    }
+}
+
+/* Dropdown Menu */
+.dropdownrespon {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+        .navigateur li{
+        display: block;
+        position: absolute;
+        top: -48px;
+
+        margin: 0 auto;
+    }
+
+    ul.navigateur{
+        height: 0;
+        width: 150px;
+        background-color: rgb(160, 71, 71);
+        position: absolute;
+        opacity: 0;
+
+        flex-direction: column;
+        display: block;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        text-align: center;
+    }
+
+    .dropdown{
+        background-color: rgb(160, 71, 71);
+        text-align: center;
+    }
+
+    .dropdownrespon {
+        display: block;
+        position: relative;
+        margin: 0;
+        min-width: 150px;
+        height: 40px;
+        padding-top: 15px;
+        list-style-type: none;
+        font-family:  Impact, Charcoal, sans-serif;
+        border-bottom: solid 1px black;
+        text-align: center;
+    }
+    nav:hover ul{
+        top: 40px;
+        left: 20%;
+        transition: opacity 1s;
+        opacity: 1;
+    }
+
+    nav:hover li{
+        max-width: 150px;
+        display: block;
+        margin: 0 auto;
+        background-color: inherit;
+        position: relative;
+        top: 0px;
+        transition: top 1s;
+    }
+
+    .navigateur a {
+        border-bottom: black;
+        left: 40%;      
+    }
+
+    .dropdown-contenu li:hover{
+        left: 30%;
+    }
+
+    li:hover .dropdown-contenu{ /*tous les elements qui sont descendants direct d'un element li*/
+        position: absolute;
+        left: 100%;
+        top: 20px;
+        background-color: rgb(160, 71, 71);
+    }
+
+    .dropdown-contenu.active{
+        display: block;
+    }
+
+    div.main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+    /*header respon
+    header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* ou une autre valeur 
+    }
+
+    .titre {
+        width: 100%;
+        top: 40%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .imageheader {
+        height: 200px; /*ajuster la hauteur selon vos besoins
+    }
+
+    .titre-photo {
+        position: static;
+        height: 100%;
+        width: 100%;
+        text-align: center; 
+        font-size: 32px;
+      }
+    */
+}

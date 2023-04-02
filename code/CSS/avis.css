@@ -1,0 +1,147 @@
+.button-avis{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #fcf18f;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+header h1{
+    position: relative;
+    display: block;
+    block-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: flex-start;
+    text-align: center;
+    left: 0;
+ 
+}
+
+
+
+.button-avis1{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #cfe2ff;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+
+.flex-end{
+    padding: 50px 0px 0px 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-avis2{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #fcb98f;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+.button-avis3{
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #8ffc9c;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
+}
+
+
+.footer{
+    position: relative;
+    width: 97.45%;
+    height: 50px;
+    top: 250%;
+    background-color: rgba(22, 154, 191, 0.5);
+}
+
+.nous{
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+/*formulaire*/
+fieldset{
+    border:0;
+}
+#Result{
+    border: 1px solid gray;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+ 
+    header h1{
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 80px;
+    
+    }
+    .navigateur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        height: 50px;
+        display: inline-block;
+        
+    }
+
+    .flex-end{
+        padding: 50px 0px 0px 90px;
+        display: flex;
+        justify-content: space-around;
+        display: inline-block;
+    }
+
+    }
+    
