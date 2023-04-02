@@ -1,45 +1,123 @@
-h1{
+.btn-home{
+    position: relative;
+    top: 90%;
+
+    cursor: pointer;
+    outline: 0;
+    color: #000000;
+    background-color: #83ecf3;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: center;
-    top: 40%;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    border-radius: 0.25rem;
+    min-width: 200px;
 }
 
-.photos-photos{
-    width: 1000px;
-    padding-left: 6%;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box{
+    position: absolute;
     top: 30%;
 }
 
-#slider {
-    position: relative;
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
 }
 
-#precedent,
-#suivant {
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+.btn{
     position: absolute;
-
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    font-size: 80px;
-    color: rgba(220, 220, 220, 0.8);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    top: 330%;
 }
 
-#precedent {
-    left: 0;
-}
+/*responsive*/
 
-#suivant {
-    right: 0;
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
 
 }
 
-#slider:hover #precedent,
-#slider:hover #suivant {
-    opacity: 1;
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
 }
