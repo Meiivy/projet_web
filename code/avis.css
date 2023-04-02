@@ -15,6 +15,21 @@
     min-width: 200px;
 }
 
+header h1{
+    position: relative;
+    display: block;
+    block-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: flex-start;
+    text-align: center;
+    left: 0;
+ 
+}
+
+
 
 .button-avis1{
     cursor: pointer;
@@ -32,6 +47,7 @@
     border-radius: 0.25rem;
     min-width: 200px;
 }
+
 
 .flex-end{
     padding: 50px 0px 0px 90px;
@@ -73,13 +89,13 @@
     min-width: 200px;
 }
 
+
 .footer{
-    position: absolute;
+    position: relative;
     width: 97.45%;
     height: 50px;
-    top: 150%;
-
-    background-color: #3366FF;
+    top: 250%;
+    background-color: rgba(22, 154, 191, 0.5);
 }
 
 .nous{
@@ -96,3 +112,36 @@ fieldset{
 #Result{
     border: 1px solid gray;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+ 
+    header h1{
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 80px;
+    
+    }
+    .navigateur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        height: 50px;
+        display: inline-block;
+        
+    }
+
+    .flex-end{
+        padding: 50px 0px 0px 90px;
+        display: flex;
+        justify-content: space-around;
+        display: inline-block;
+    }
+
+    }
+    

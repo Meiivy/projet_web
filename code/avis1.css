@@ -44,7 +44,7 @@
     background-color: white;
 }
 
-#avis-2{
+#avis-1{
     height: 350px;
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -141,11 +141,11 @@ header h1{
 }
 
 .footer{
-position: absolute;
-width: 97.45%;
-height: 50px;
-top: 150%;
-background-color: rgba(22, 154, 191, 0.5);
+    position: absolute;
+    width: 97.45%;
+    height: 50px;
+    top: 150%;
+    background-color: rgba(22, 154, 191, 0.5);
 }
 
 .nous{
@@ -201,8 +201,5 @@ background-color: rgba(22, 154, 191, 0.5);
          margin-left: 30%;
         
     }
-
     }
     
-
-

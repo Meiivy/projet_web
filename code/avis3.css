@@ -1,57 +1,44 @@
-.titre-photo {
-    position: absolute;
-    height: 154px;
-    left: 20%;
 
 
-    font-style: italic;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
 
+.photo-personne {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+     margin-top: 15px;
+     margin-left: 45%;
+    
 }
 
-.titre-souspart {
-    position: absolute;
-    height: 118px;
-    left: 150px;
-    top: 70px;
-    text-decoration: underline;
-
-    font-size: 40px;
-    color:#3366FF;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.footer{
-    position: absolute;
-    width: 97.45%;
-    height: 50px;
-    top: 1700px;
-
-    background-color: #3366FF;
-}
-
-.nous{
+.avis-personne {
+    font-size: 1.5rem;
+    margin: 10px;
     text-align: center;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
 }
 
-.dropdown-contenu {
-    display: none;
-    position: absolute;
-    background-color: #ffffff91;
-    min-width: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+.nom-personne {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
 }
 
-.dropdown:hover .dropdown-contenu {
-    display: block;
+/* ----------- Photos ----------- */
+.titrephoto {
+    margin: 20px;
+    text-align: center;
 }
+
+.photo1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.photo1 img {
+    max-width: 100%;
+}
+
+
 
 #avis{
     position: relative;
@@ -59,45 +46,27 @@
     background-color: white;
 }
 
-#avis-1{
+#avis-3{
     height: 350px;
     position: relative;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    margin-right: 5%;
+    display: block;
 }
 
-.avis-personne{
-    position: absolute;
-    height: 232px;
-    top: 30%;
-    left: 40%;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight : bold;
+header h1{
+    position: relative;
+    display: block;
+    block-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+    display: flex;
     align-items: center;
+    margin-top: 0px;
+    justify-content: flex-start;
     text-align: center;
-    font-size: 20px;
+    left: 0;
 }
 
-.nom-personne{
-    position: absolute;
-    width: 195px;
-    height: 58px;
-    left: 55%;
-    top: 55%;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-size: 25px;
-}
-
-.photo-personne{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 20%;
-    top: 30%;
-}
 
 .button-avis{
     cursor: pointer;
@@ -172,3 +141,71 @@
     border-radius: 0.25rem;
     min-width: 200px;
 }
+
+.footer{
+    position: absolute;
+    width: 97.45%;
+    height: 50px;
+    top: 150%;
+    background-color: rgba(22, 154, 191, 0.5);
+    }
+    
+.nous{
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+ 
+    .navigateur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        height: 50px;
+        display: inline-block;
+        
+    }
+
+    .flex-end{
+        padding: 50px 0px 0px 90px;
+        display: flex;
+        justify-content: space-around;
+        display: inline-block;
+    }
+
+    .nom-personne {
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+    }
+    
+
+
+    .avis-personne {
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .photo-personne {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+         margin-top: 15px;
+         margin-left: 30%;
+        
+    }
+
+    }
+    
+
+
+

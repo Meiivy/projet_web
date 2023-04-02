@@ -1,7 +1,7 @@
 <!--commentaires
 - html5, css, javascript
 - sujet du site libre 
-- sources concernant la redaction, les images et la concept : citer
+- sources concernant la redaction, les images et la concept : cité
 - formulaire obligatoire
 - cv sous format html (coder le cv), obligatoire
 - fichiers utilisés obligé d'être dans des fichiers diff
@@ -24,44 +24,23 @@
 
     <body>
         <header>
-            <img class="imageheader" src="../photos/header2.jpg" alt="photo de l'ile de la réunion" />
+            <img class="imageheader" src="photos/header2.jpg" alt="photo de l'ile de la réunion" />
             <div class="titre-photo">
                 <h1>Avis 1</h1>
             </div>
         </header>
                     
             <nav>
-                <div class='dropdownrespon'> 
-                    <svg width="60" height="50">
-                        <rect x="5" y="2" rx="2" ry="2" width="50" height="5"
-                            style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
-                        <rect x="5" y="12" rx="2" ry="2" width="50" height="5"
-                            style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
-                        <rect x="5" y="22" rx="2" ry="2" width="50" height="5"
-                            style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
-                    </svg> 
-                </div>
-
                 <ul class="navigateur">
                     <li class="home"><a href="main.html">Accueil</a></li>
 
                     <div class="dropdown">
                         <li class="li-nav-avis"><a href="avis.html" id="dropdown-toggle">Avis</a>
-                            <div class="dropdown-contenu">
-                                <p><a href="avis1.html#avis-1">Avis 1</a></p>
-                                <p><a href="avis2.html#avis-1">Avis 2</a></p>
-                                <p><a href="avis3.html#avis-13">Avis 3</a></p>
-                            </div>
                         </li>
                     </div>
                         
                     <div class="dropdown">
                         <li class="li-nav-tourisme"><a href="tourisme.html">Tourisme</a>
-                            <div class="dropdown-contenu">
-                                <p><a href="tourisme.html#titre-section">Le volcan</a></p>
-                                <p><a href="tourisme.html#titre-section2">Les plages</a></p>
-                                <p><a href="tourisme.html#titre-section3">Les forets</a></p>
-                            </div>
                         </li>
                     </div>
                 
@@ -94,59 +73,56 @@
                 <label for="female">Femme </label>
             </fieldset>
             <fieldset>
-                <legend>Coche les noms des gens dont vous avez déjà entendu parler:</legend>
-                <input type="checkbox" id='name_1' name="user_famous" value='Rasmus Lerdorf'/>
-                <label for="name_1">Rasmus Lerdorf </label>
-                <input type="checkbox" id='name_2' name="user_famous" value='Lisa Schmeiser'/> 
-                <label for="name_2">Lisa Schmeiser </label>
-                <input type="checkbox" id='name_3' name="user_famous" value='Al Gore'/> 
-                <label for="name_3">Al Gore </label>
-                <input type="checkbox" id='name_4' name="user_famous" value='Boutros Boutros-Gali'/> 
-                <label for="name_4">Boutros Boutros-Gali </label>
+                <legend>Dans quel hotel étiez vous ?</legend>
+                <input type="checkbox" id='name_1' name="user_famous" value='Hôtel Select - Réunion '/>
+                <label for="name_1">Hôtel Select - Réunion  </label>
+                <input type="checkbox" id='name_2' name="user_famous" value='Bellepierre'/> 
+                <label for="name_2">Bellepierre </label>
+                <input type="checkbox" id='name_3' name="user_famous" value='Tulip inn Sainte Clotilde'/> 
+                <label for="name_3">Tulip inn Sainte Clotilde </label>
+                <input type="checkbox" id='name_4' name="user_famous" value='Le Juliette Dodu '/> 
+                <label for="name_4">Le Juliette Dodu  </label>
             </fieldset>
             <fieldset>
-                <label for="navigateur">Quel est votre navigateur préféré ?</label>
+                <label for="navigateur">Une note de 1 à 5 ?</label>
                 <select name='user_nav' id='navigateur'>
-                    <option>  Internet Explorer </option>
-                    <option>  FireFox </option>
-                    <option>  Mozilla </option>
-                    <option>  Lynx </option>
-                    <option>  Mosaic </option>
-                    <option selected='selected'>  Netscape </option>
-                    <option>  SlipKnot </option>
-                    <option>  Web Explorer </option>
-                    <option> Aucun de ceux proposés </option>
+                    <option selected="selected">  1</option>
+                    <option>  2 </option>
+                    <option>  3 </option>
+                    <option>  4 </option>
+                    <option>  5 </option>
+                    <option> Plus encore </option>
                 </select>	
             </fieldset>
             <fieldset>
-                <label for="glace">Quel est votre parfum de glace préféré ?</label>
+                <label for="glace">Votre activité preferée de vos vacances ?</label>
                 <select name='user_glace' id='glace' size='3'>
-                    <option value='Vanille'> Vanille </option>
-                    <option value='Chocolat'> Chocolat </option>
-                    <option value='Cerise'> Cerise </option>
-                    <option value='Bannane'> Bannane </option>
+                    <option value='Randonnée'> Randonnée </option>
+                    <option value='plage'> Les plages </option>
+                    <option value='Forets'> Balade en forets </option>
+                    <option value='Animaux'> Les animaux </option>
                 </select>	
             </fieldset>
             <fieldset>
-                <label for="login">Donnez votre login:</label>
+                <label for="login">Nom prénom s'il vous plait ?</label>
                 <input type='text' id='login' name="usr_login" size='20'/>
             </fieldset>
             <fieldset>
-                <legend>Avez vous un surnom?:</legend>
+                <legend>Avez vous pris des bonbons sur le comptoire ?</legend>
                 <input type="radio"	id='no_surname' name='surname' value='N'/> 
                 <label for="no_surname">Non</label>    
                 <input type="radio"	id='yes_surname' name='surname' value='Y'/> 
-                <label for="yes_surname">Oui</label><label for="surname_txt">, C'est:</label>   
+                <label for="yes_surname">Oui</label><label for="surname_txt">, pourquoi en avez vous pris ?</label>   
                 <input type='text' id="surname_txt" name="surname_text" size='20'/>
             </fieldset>
             <fieldset>
-                <label for="devise">Entrez votre devise personelle:</label>
+                <label for="devise">Avis général ?</label>
                 <p>
-                <textarea id='devise' name='usr_devise' cols="40" rows='4'>C'est la vie</textarea>
+                <textarea id='devise' name='usr_devise' cols="40" rows='4'>C'est trop cool</textarea>
                 </p>
             </fieldset>
             <p>
-                Entrez votre devise personelle:
+                Fin du formulaire, bravo à vous de l'avoir terminé
                 <!--<input type='submit'/>-->
                 <input type="button" value="Envoyez vos réponses" onclick="printinfo()"/> 
                 <input type='reset'/>

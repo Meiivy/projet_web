@@ -1,4 +1,4 @@
-// Banque Q :
+// Banque des questions:
 
 var questionBank= [
     {
@@ -32,6 +32,7 @@ var questionBank= [
         answer : 'partout'
     },
 ]
+
 
 
 

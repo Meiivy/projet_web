@@ -1,5 +1,3 @@
-
-
 function printinfo() {
     // Age
     if (document.principal.user_age.value != ""){
@@ -26,42 +24,42 @@ function printinfo() {
     }
 
     if (count == 0) {
-        var know = "Vous ne suivez pas l'actualité.<br>";
+        var know = "Vous avez dormi à la belle étoile.<br>";
     } else {
-        var know = "Vous connaissez : " + people+".<br>";
+        var know = "L'hotel était le : " + people+".<br>";
     }
 
     // Nav
     if (document.principal.user_nav.value!="Aucun de ceux proposés") {
-        var nav = "Vous utilisez le navigateur :"+document.principal.user_nav.value+".<br>";
+        var nav = "La note:"+document.principal.user_nav.value+".<br>";
     } else {
-        var nav = "Vous possédez un navigateur inhabituel.<br>";       
+        var nav = "Il s'agirait de le noter svp<br>";       
     }
 
     // Glace
     if (document.principal.user_glace.value!="") {
-        var glace = "Vous préférez le parfum :"+document.principal.user_glace.value+".<br>";       
+        var glace = "Votre activité préférée :"+document.principal.user_glace.value+".<br>";       
     } else {
-        var glace = "Vous n'aimez aucune glace.<br>";       
+        var glace = "Mais vous n'avez rien fait ??.<br>";       
     }
 
     // login
     if (document.principal.usr_login.value!="") {
-        var login = "Votre login est :"+document.principal.usr_login.value+".<br>";       
+        var login = "Votre nom prénom :"+document.principal.usr_login.value+".<br>";       
     } else {
-        var login = "Vous n'avez pas de mot de passe.<br>";       
+        var login = "Mais qui êtes vous?<br>";       
     }
 
     //nickname
     if (document.principal.surname.value != 'N') {
-        var nickname = "Votre surnom est : "+document.principal.surname_text.value+".<br>";       
+        var nickname = "Les bonbons ? : "+document.principal.surname_text.value+".<br>";       
     } else {
-        var nickname = "Vous n'avez pas de surnom.<br>";       
+        var nickname = "Vous êtes une bonne personne.<br>";       
     }
 
     //devise
 
-    var devise = "Votre Devise préférée est :"+document.principal.usr_devise.value+".<br>"; 
+    var devise = "Merci pour votre avis :"+document.principal.usr_devise.value+".<br>"; 
 
 
     // Print
