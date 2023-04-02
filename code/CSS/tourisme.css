@@ -13,7 +13,7 @@
     text-decoration-line: underline;
     font-weight : bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image: url("photos/icon-avis.png");
+    list-style-image: url("/photos/icon-avis.png");
     color: red;
 }
 
